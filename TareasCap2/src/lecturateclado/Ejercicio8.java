@@ -1,16 +1,18 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Calular el numero total de cabezas y patas
 public class Ejercicio8 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var gallinas = RandomUtilities.generarRandomInt(1,26,random);
-        final var vacas = RandomUtilities.generarRandomInt(1,23,random);;
+        final var capturador = new Scanner(System.in);
+        final var gallinas = ScannerManager.leerInt(capturador, "Ingrese el total de gallinas");
+        final var vacas = ScannerManager.leerInt(capturador, "Ingrese el total de vacas");
 
         final var totalCabezas = calcularTotalCabeza(gallinas, vacas);
         final var totalPatas = calcularTotalPatas(gallinas, vacas);
@@ -36,3 +38,4 @@ public class Ejercicio8 {
         System.out.printf("En %d vacas & %d gallinas hay %d patas", vacas, gallinas, totalPatas);
     }
 }
+

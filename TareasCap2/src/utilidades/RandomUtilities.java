@@ -1,4 +1,4 @@
-package operacionesmatematicasdataaletorea;
+package utilidades;
 
 import java.util.Random;
 

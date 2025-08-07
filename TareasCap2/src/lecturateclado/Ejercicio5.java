@@ -1,16 +1,18 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Calculo del IMC (Inidece de masa corporal)
 public class Ejercicio5 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var peso = RandomUtilities.generarRandomDouble(50, 90, random);
-        final var altura = RandomUtilities.generarRandomDouble(1,2, random);
+        final var capturador = new Scanner(System.in);
+        final var peso = ScannerManager.leerDouble(capturador, "Ingrese el peso");
+        final var altura = ScannerManager.leerDouble(capturador, "Ingrese la altura");
         final var nombre = "Jorge";
 
         final var imc = calcularImc(peso, altura);

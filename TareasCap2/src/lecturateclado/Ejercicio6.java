@@ -1,20 +1,23 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Promedio ponderado con peso
 public class Ejercicio6 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var x = RandomUtilities.generarRandomDouble(10, 26, random);
-        final var y = RandomUtilities.generarRandomDouble(15, 33, random);
-        final var z = RandomUtilities.generarRandomDouble(2, 13, random);
-        final var p1 = RandomUtilities.generarRandomDouble(1, 3, random);
-        final var p2 = RandomUtilities.generarRandomDouble(1, 4, random);
-        final var p3 = RandomUtilities.generarRandomDouble(1, 3, random);
+        final var capturador = new Scanner(System.in);
+
+        final var x = ScannerManager.leerDouble(capturador, "Ingrese el valor de x");
+        final var y = ScannerManager.leerDouble(capturador, "Ingrese el valor de y");
+        final var z = ScannerManager.leerDouble(capturador, "Ingrese el valor de z");
+        final var p1 = ScannerManager.leerDouble(capturador, "Ingrese el valor de p1");
+        final var p2 = ScannerManager.leerDouble(capturador, "Ingrese el valor de p2");
+        final var p3 = ScannerManager.leerDouble(capturador, "Ingrese el valor de p3");
 
 
 

@@ -1,16 +1,18 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Calcular el area de un triangulo
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var b = RandomUtilities.generarRandomDouble(5, 26, random);
-        final var h = RandomUtilities.generarRandomDouble(10,33, random);
+        final var capturador = new Scanner(System.in);
+        final var b = ScannerManager.leerDouble(capturador, "Ingrese la base del triangulo");
+        final var h = ScannerManager.leerDouble(capturador, "Ingrese la altura del triangulo");
 
         final var area = calcularAreaTriangulo(b,h);
         impirmirResultados(b,h, area);

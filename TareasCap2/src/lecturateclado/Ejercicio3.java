@@ -1,17 +1,20 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Calcular el area de un trapecio
 public class Ejercicio3 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var a = RandomUtilities.generarRandomDouble(5,13, random);
-        final var b = RandomUtilities.generarRandomDouble(10,26, random);
-        final var h = RandomUtilities.generarRandomDouble(2,8, random);
+        final var capturador = new Scanner(System.in);
+
+        final var a = ScannerManager.leerDouble(capturador, "Ingrese la longitud del lado 1 del trapecio");
+        final var b = ScannerManager.leerDouble(capturador, "Ingrese la longitud del lado 2 del trapecio");
+        final var h = ScannerManager.leerDouble(capturador,"Ingrese la altura del trapecio");
 
         final var area = caluclarAreaTrapecio(a, b, h);
         impirmirResultados(a, b, h, area);

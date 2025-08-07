@@ -1,5 +1,7 @@
 package operacionesmatematicasdataaletorea;
 
+import utilidades.RandomUtilities;
+
 import java.util.Random;
 
 // Calcular el area de un trapecio

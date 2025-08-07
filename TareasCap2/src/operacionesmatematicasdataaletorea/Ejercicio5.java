@@ -1,5 +1,7 @@
 package operacionesmatematicasdataaletorea;
 
+import utilidades.RandomUtilities;
+
 import java.util.Random;
 
 // Calculo del IMC (Inidece de masa corporal)

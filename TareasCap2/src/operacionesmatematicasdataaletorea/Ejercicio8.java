@@ -1,5 +1,7 @@
 package operacionesmatematicasdataaletorea;
 
+import utilidades.RandomUtilities;
+
 import java.util.Random;
 
 // Calular el numero total de cabezas y patas

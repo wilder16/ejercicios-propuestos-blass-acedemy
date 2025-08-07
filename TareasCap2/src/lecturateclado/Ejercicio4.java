@@ -1,15 +1,17 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Calcular el periodo de un pendulo
 public class Ejercicio4 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var longitud = RandomUtilities.generarRandomDouble(5,16,random);
+        final var capturador = new Scanner(System.in);
+        final var longitud = ScannerManager.leerDouble(capturador, "Ingrese la longitud del pendulo");
         final var gravedad = 9.81;
 
         final var periodo = calcularPeriodoPendulo(longitud, gravedad);

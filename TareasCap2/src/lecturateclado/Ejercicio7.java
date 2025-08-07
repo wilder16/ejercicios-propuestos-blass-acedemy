@@ -1,23 +1,24 @@
-package declaracionmetodos;
+package lecturateclado;
 
 import utilidades.RandomUtilities;
+import utilidades.ScannerManager;
 
 import java.util.Random;
+import java.util.Scanner;
 
 // Calcular media geometrica
 public class Ejercicio7 {
 
     public static void main(String[] args) {
-        final var random = new Random();
-        final var x1 = RandomUtilities.generarRandomDouble(10,76, random);
-        final var x2 = RandomUtilities.generarRandomDouble(1,20, random);
-        final var x3 = RandomUtilities.generarRandomDouble(1,11, random);
-        final var x4 = RandomUtilities.generarRandomDouble(10,86, random);;
+        final var capturador = new Scanner(System.in);
+        final var x1 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x1");
+        final var x2 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x2");
+        final var x3 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x3");
+        final var x4 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x4");
 
 
         final var mediaGeometrica = calcularMediaGeometrica(x1, x2, x3, x4);
         imprimirResultado(x1, x2, x3, x4, mediaGeometrica);
-
 
     }
 
