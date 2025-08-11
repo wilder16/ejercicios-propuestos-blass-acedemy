@@ -13,6 +13,7 @@ public class Ejercicio2 {
         final var capturador = new Scanner(System.in);
         final var b = ScannerManager.leerDouble(capturador, "Ingrese la base del triangulo");
         final var h = ScannerManager.leerDouble(capturador, "Ingrese la altura del triangulo");
+        capturador.close();
 
         final var area = calcularAreaTriangulo(b,h);
         impirmirResultados(b,h, area);

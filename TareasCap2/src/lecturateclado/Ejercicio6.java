@@ -18,6 +18,7 @@ public class Ejercicio6 {
         final var p1 = ScannerManager.leerDouble(capturador, "Ingrese el valor de p1");
         final var p2 = ScannerManager.leerDouble(capturador, "Ingrese el valor de p2");
         final var p3 = ScannerManager.leerDouble(capturador, "Ingrese el valor de p3");
+        capturador.close();
 
 
 

@@ -15,6 +15,7 @@ public class Ejercicio3 {
         final var a = ScannerManager.leerDouble(capturador, "Ingrese la longitud del lado 1 del trapecio");
         final var b = ScannerManager.leerDouble(capturador, "Ingrese la longitud del lado 2 del trapecio");
         final var h = ScannerManager.leerDouble(capturador,"Ingrese la altura del trapecio");
+        capturador.close();
 
         final var area = caluclarAreaTrapecio(a, b, h);
         impirmirResultados(a, b, h, area);

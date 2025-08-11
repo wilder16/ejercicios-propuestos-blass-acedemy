@@ -15,6 +15,8 @@ public class Ejercicio1 {
         final var b = ScannerManager.leerDouble(capturador, "Ingrese la base del paralelogramo");
         final var h = ScannerManager.leerDouble(capturador, "Ingrese la altura del paralelogramo");
 
+        capturador.close();
+
         final var area = calcularAreaParalelogramo(b,h);
         impirmirResultados(b, h, area);
 

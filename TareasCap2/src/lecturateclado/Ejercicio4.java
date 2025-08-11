@@ -12,6 +12,7 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         final var capturador = new Scanner(System.in);
         final var longitud = ScannerManager.leerDouble(capturador, "Ingrese la longitud del pendulo");
+        capturador.close();
         final var gravedad = 9.81;
 
         final var periodo = calcularPeriodoPendulo(longitud, gravedad);

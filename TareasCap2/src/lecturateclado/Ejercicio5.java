@@ -13,6 +13,7 @@ public class Ejercicio5 {
         final var capturador = new Scanner(System.in);
         final var peso = ScannerManager.leerDouble(capturador, "Ingrese el peso");
         final var altura = ScannerManager.leerDouble(capturador, "Ingrese la altura");
+        capturador.close();
         final var nombre = "Jorge";
 
         final var imc = calcularImc(peso, altura);

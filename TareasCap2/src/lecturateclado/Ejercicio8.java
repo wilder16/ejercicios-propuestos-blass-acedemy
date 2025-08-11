@@ -13,6 +13,7 @@ public class Ejercicio8 {
         final var capturador = new Scanner(System.in);
         final var gallinas = ScannerManager.leerInt(capturador, "Ingrese el total de gallinas");
         final var vacas = ScannerManager.leerInt(capturador, "Ingrese el total de vacas");
+        capturador.close();
 
         final var totalCabezas = calcularTotalCabeza(gallinas, vacas);
         final var totalPatas = calcularTotalPatas(gallinas, vacas);

@@ -15,6 +15,7 @@ public class Ejercicio7 {
         final var x2 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x2");
         final var x3 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x3");
         final var x4 = ScannerManager.leerDouble(capturador, "Ingrese el valor de x4");
+        capturador.close();
 
 
         final var mediaGeometrica = calcularMediaGeometrica(x1, x2, x3, x4);
