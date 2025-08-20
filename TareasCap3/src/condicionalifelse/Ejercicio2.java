@@ -9,7 +9,6 @@ public class Ejercicio2 {
         final var random = new Random();
         final var numero = RandomUtilities.generarRandomInt(50, 300, random);
 
-        imprimirMensaje(""+numero);
         imprimirMensaje(validarAltoChance(numero));
 
     }

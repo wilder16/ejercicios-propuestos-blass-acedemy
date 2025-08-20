@@ -13,17 +13,17 @@ public class ScannerManager {
         return scanner.nextDouble();
     }
 
-    public static String leeString(Scanner scanner, String mensaje){
+    public static String leerString(Scanner scanner, String mensaje){
         System.out.printf("%s: ", mensaje);
         return scanner.nextLine();
     }
 
-    public static boolean leeBoolean(Scanner scanner, String mensaje){
+    public static boolean leerBoolean(Scanner scanner, String mensaje){
         System.out.printf("%s: ", mensaje);
         return scanner.nextBoolean();
     }
 
-    public static char leeChar(Scanner scanner, String mensaje){
+    public static char leerChar(Scanner scanner, String mensaje){
         System.out.printf("%s: ", mensaje);
         return scanner.next().charAt(0);
     }
