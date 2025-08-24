@@ -1,4 +1,4 @@
-package aplicacionesalgoritmicasbucles;
+package buclefor;
 
 public class Ejercicio5 {
 

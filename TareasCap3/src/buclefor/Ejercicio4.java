@@ -1,10 +1,10 @@
-package aplicacionesalgoritmicasbucles;
+package buclefor;
 
 import utilidades.ScannerManager;
 
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class Ejercicio4 {
     public static void main(String[] args) {
         final var capturador = new Scanner(System.in);
 
@@ -17,7 +17,10 @@ public class Ejercicio1 {
 
     static void imprimirSerie(int n){
         for (int i = 1; i <= n; i++) {
-            System.out.printf("%d ", i);
+
+            if (i % 2 == 0){
+                System.out.printf("%d ", i);
+            }
         }
     }
 }

@@ -1,16 +1,16 @@
-package aplicacionesalgoritmicasbucles;
+package buclefor;
 
 import utilidades.ScannerManager;
 
 import java.util.Scanner;
 
-public class Ejercicio8 {
+public class Ejercicio9 {
 
     public static void main(String[] args) {
         final var capturador = new Scanner(System.in);
 
         final var n = ScannerManager.leerInt(capturador,
-                "Ingrese el numero hasta donde quiere saber cuantos numeros pares hay");
+                "Ingrese el numero hasta donde quiere saber cuantos numeros multiplos de 5 hay");
         capturador.close();
 
         imprimirResultado(n, calcularCantidad(n));
@@ -18,8 +18,8 @@ public class Ejercicio8 {
 
     static int calcularCantidad(int n){
         var contador = 0;
-        for (int i = 5; i < n; i++) {
-            if (i % 2 == 0){
+        for (int i = 10; i < n; i++) {
+            if (i % 5 == 0){
                 contador++;
             }
         }
@@ -27,6 +27,6 @@ public class Ejercicio8 {
     }
 
     static void imprimirResultado(int n, int total){
-        System.out.printf("Entre 5 y %d hay %d numeros pares", n, total);
+        System.out.printf("Entre 10 y %d hay %d numeros multiplos de 5", n, total);
     }
 }

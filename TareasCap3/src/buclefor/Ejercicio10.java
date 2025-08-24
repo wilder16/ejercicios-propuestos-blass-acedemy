@@ -1,4 +1,4 @@
-package aplicacionesalgoritmicasbucles;
+package buclefor;
 
 import utilidades.ScannerManager;
 
